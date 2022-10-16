@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CartService } from 'src/app/services/cart.service';
 import { Cart } from 'src/app/shared/models/Carts';
 import { CartItem } from 'src/app/shared/models/Cartsitems';
+import { faTrash } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-cart-page',
@@ -9,6 +10,7 @@ import { CartItem } from 'src/app/shared/models/Cartsitems';
   styleUrls: ['./cart-page.component.css'],
 })
 export class CartPageComponent implements OnInit {
+  faTrash=faTrash;
   cart!: Cart;
   constructor(private cartService: CartService) {
     this.cartService.getCartObservabale().subscribe((cart) => {

@@ -1,8 +1,12 @@
-<app-search></app-search>
-<app-tags></app-tags>
+<div class="card">
+  <div class="offer">What will you eat today ?</div>
+  <app-search></app-search>
+  <app-tags></app-tags>
+</div>
+
 <app-not-found
-[visible]="!foods || !foods.length"
-resetLinkText="Reset Search"
+  [visible]="!foods || !foods.length"
+  resetLinkText="Reset Search"
 ></app-not-found>
 <ul>
   <li *ngFor="let food of foods">
@@ -10,14 +14,14 @@ resetLinkText="Reset Search"
       <img src="{{ food.imageUrl }}" alt="{{ food.name }}" />
       <div class="content">
         <div class="name">
-          {{ food.name }}
+         <strong>{{ food.name }}</strong>
         </div>
         <span class="favorite {{ food.favorite ? '' : 'not' }}">❤</span>
         <div class="stars">
           <star-rating
             [value]="food.stars"
             [totalstars]="5"
-            checkedcolor="yellow"
+            checkedcolor="red"
             uncheckedcolor="white"
             size="22px"
             [readonly]="true"
@@ -37,7 +41,7 @@ resetLinkText="Reset Search"
 
         <div class="price">
           <span>
-            {{ food.price | currency }}
+            <strong>{{ food.price | currency }}</strong>
           </span>
         </div>
       </div>

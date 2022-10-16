@@ -1,7 +1,7 @@
-<app-not-found [visible]="!food.id"
+<app-not-found [visible]="!food"
 notFoundMessage="Food Not Found"
 resetLinkText="Back To HomePage"></app-not-found>
-<div *ngIf="food.id" class="container">
+<div *ngIf="food" class="container">
   <img src="{{ food.imageUrl }}" alt="{{ food.name }}" />
 
   <div class="details">
@@ -16,14 +16,14 @@ resetLinkText="Back To HomePage"></app-not-found>
         [value]="food.stars"
         [totalstars]="5"
         checkedcolor="red"
-        uncheckedcolor="black"
+        uncheckedcolor="white"
         size="25px"
         [readonly]="true"
       ></star-rating>
     </div>
 
     <div class="origins">
-      <span *ngFor="let origin of food.origins">{{ origin }}</span>
+      <span *ngFor="let origin of food.origins"><strong>{{ origin }}</strong></span>
     </div>
 
     <div class="tags">

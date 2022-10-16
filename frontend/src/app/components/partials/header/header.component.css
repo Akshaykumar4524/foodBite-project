@@ -1,14 +1,14 @@
 header{
   position: relative;
-  background-color: white;
+  background-color: #333132;
   padding: 0;
-  border-bottom: 1px solid #e72929;
+  border-bottom: 1px solid #fdd810;
 }
 a{
-  color: #af1313;
+  color: #fdd810;
 }
 a:hover{
-background: #e72929;
+/* background: #e72929; */
 color: white;
 cursor: pointer;
 }
@@ -44,7 +44,7 @@ a span{
 .menu{
 position:absolute;
 z-index: 1;
-background: whitesmoke;
+/* background: white; */
 display: none;
 }
 
@@ -55,4 +55,9 @@ display: none;
 .menu a{
   width: 100%;
   min-width: 8rem;
+  color: #fdd810;
+}
+
+.menu a:hover{
+  color: white;
 }

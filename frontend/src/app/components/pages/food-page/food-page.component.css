@@ -4,6 +4,9 @@
   align-items: center;
   flex-wrap: wrap;
   margin: 3rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  /* background-color: #fdd810; */
+  /* border-radius: 2rem; */
 }
 
 .container > * {
@@ -12,11 +15,12 @@
 }
 
 img {
-  border-radius: 3rem;
+  border-radius: 2rem;
   flex: 1 0;
   object-fit: cover;
   height: 35rem;
   margin: 1rem;
+  border: 2px solid #fdd810;
 }
 
 .details {
@@ -26,7 +30,7 @@ img {
   flex: 1 0;
   border: 3rem;
   padding: 2rem;
-  color: black;
+  color: rgb(255, 255, 255);
   margin-left: 1rem;
 }
 .header {
@@ -45,7 +49,7 @@ img {
 }
 
 .favorite.not {
-  color: grey;
+  color: rgb(255, 255, 255);
 }
 
 .origins {
@@ -59,7 +63,8 @@ img {
   font-size: 1.2rem;
   margin: 0.5rem 0.5rem 0.5rem 0;
   border-radius: 2rem;
-  background-color: aliceblue;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 .tags {
@@ -68,12 +73,12 @@ img {
 }
 
 .tags a {
-  background-color: #f0f0f0;
+  background-color: #fdd810;
   padding: 0.1rem 1rem;
   margin: 0.2rem 0.2rem;
   border-radius: 10rem;
   font-weight: 600;
-  color: blue;
+  color: rgb(0, 0, 0);
   transition: transform 0.1s, box-shadow 1s;
 }
 /* .tags a:hover {
@@ -95,24 +100,29 @@ img {
 .price {
   font-size: 1.8rem;
   margin: 2rem 2rem 2rem 0;
-  color: green;
+  color: rgb(255, 255, 255);
 }
 
 .price::before {
   content: "Price: ";
-  color: darkgray;
+  color: rgb(255, 255, 255);
 }
 
 button {
-  color: white;
-  background: #e72929;
+  color: #000000;
+  background: #fdd810;
   border: none;
   font-size: 1.2rem;
   padding: 1rem;
   border-radius: 10rem;
   outline: none;
+  opacity: 0.9;
+  font-weight: 1000;
+  font-size: xx-large;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 button:hover {
-  opacity: 0.9;
+  opacity: 1;
   cursor: pointer;
+  /* color: rgb(255, 0, 0); */
 }

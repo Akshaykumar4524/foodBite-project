@@ -1,25 +1,23 @@
+1. Link to the Live App -> https://foodbite.onrender.com 
 
-        Functionalities Learned and Implemented in this Project
-
-1. Created a header
-2. List Foods
-3. Search
-4. Tags
-5. Food Page
-6. Cart Page
-7. Not found Page
-8. Connect Backend
-9. npm install express cors
-10. create server.ts
-   1. install @types
-   2. Add Apis
-11. npm install nodemon ts-node --save-dev
-12. Login Page
-13. Connect to MongoDB Atlas
-14. Connecting Login API to MongoDB Atlas
-15. Register Page     
-16. Loading
-17. Checkout Page             
-18. Payment Page       
-19. Adding Paypal     
-20. Order Track status
+2. steps to clone and run the application Locally
+   1. clone this url -> https://github.com/Akshaykumar4524/foodBite-project.git  
+   2. go to terminal and enter   
+      ```
+        cd frontend
+        npm install --force
+        npm start
+        ```
+   3. open new terminal and enter
+      ```
+        cd backend
+        npm install --force
+        npm start
+      ```
+      
+    4. open the browser and go to local host:4200 to see the result
+      
+3. Live Application video file ->
+      [FoodBite - Google Chrome 2023-01-08 17-49-24.zip](https://github.com/Akshaykumar4524/foodBite-project/files/10368381/FoodBite.-.Google.Chrome.2023-01-08.17-49-24.zip)
+      
+4. any suggestions are highly appreciated       
